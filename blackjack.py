@@ -16,7 +16,6 @@ def calculate_score(cards):
     elif 11 in cards and sum(cards) > 21:
         cards.remove(11)
         cards.append(1)
-
     return sum(cards)
 
 
