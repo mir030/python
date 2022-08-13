@@ -1,4 +1,4 @@
-def removeElement(nums, val):
+def remove_element(nums, val):
     if len(nums) == 0:
         return 0
     i = 0
@@ -9,8 +9,9 @@ def removeElement(nums, val):
             i += 1
     return i
 
+
 nums = [0, 1, 2, 2, 3, 0, 4, 2]
 val = 2
-k = removeElement(nums, val)
+k = remove_element(nums, val)
 
 print(k)
