@@ -25,9 +25,11 @@ def higher_lower_game():
         if ones_followers >= twos_followers and answer.lower() == "a":
             score += 1
             contestant_one, ones_followers = contestant_two, twos_followers
+            print(f"Correct Answer! You current score is {score}!")
         elif ones_followers < twos_followers and answer.lower() == "b":
             score += 1
             contestant_one, ones_followers = contestant_two, twos_followers
+            print(f"Correct Answer! You current score is {score}!")
         else:
             print(f"Wrong Answer! You total score is {score}!")
             keep_playing = False
