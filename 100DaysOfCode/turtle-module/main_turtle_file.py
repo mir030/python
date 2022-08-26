@@ -2,6 +2,8 @@ import random
 import turtle
 from turtle import Turtle, Screen
 
+turtle.colormode(255)
+
 
 def random_color():
     r = random.randint(0, 255)
@@ -13,7 +15,7 @@ def random_color():
 
 tim = Turtle()
 tim.shape("turtle")
-tim.color("red", "green")
+tim.speed(25)
 
 """Drawing a square"""
 # for _ in range(0, 4):
@@ -37,7 +39,7 @@ tim.color("red", "green")
 #         tim.right(angle)
 
 """ Draw a Random Walk"""
-# turtle.colormode(255)
+turtle.colormode(255)
 # angle_degree = [0, 90, 180, 270]
 # tim.pensize(10)
 # tim.speed(40)
@@ -47,6 +49,12 @@ tim.color("red", "green")
 #     tim.forward(30)
 #     tim.setheading(random.choice(angle_degree))
 
+"""Draw a spirograph"""
+# for i in range(1, 101):
+#     tim.color(random_color())
+#     tim.circle(100)
+#     tilt = 360 / 100
+#     tim.setheading(tilt * i)
 
 screen = Screen()
 screen.exitonclick()
