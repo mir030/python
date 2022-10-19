@@ -9,7 +9,7 @@ def remove_duplicates(nums):
     return i + 1
 
 
-nums = [1, 2, 2, 3, 3, 3]
+nums = [1, 1, 2, 2, 3, 3, 3]
 expectedNums = [1, 2, 3]
 
 k = remove_duplicates(nums)

@@ -21,7 +21,14 @@ def single_element_2(array):
     return array_set_list[0]
 
 
+def single_element_3(array):
+    # Write your code here
+    for num in array:
+        if array.count(num) == 1:
+            return num
+
+
 nums = [4, 1, 2, 1, 2, 4, 5]
-output = single_element_2(nums)
+output = single_element_3(nums)
 print(output)
 
