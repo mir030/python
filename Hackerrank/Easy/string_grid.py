@@ -4,7 +4,7 @@ def gridChallenge(grid):
     for letters in grid:
         grid_list = list(letters)
         grid_list.sort()
-        sorted_grid.append(grid_list)
+        sorted_grid.append(grid_list )
     for i in range(0, len(grid[0])):
         for j in range(0, len(sorted_grid)-1):
             c1 = sorted_grid[j][i]
