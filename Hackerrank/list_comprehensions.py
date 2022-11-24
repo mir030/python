@@ -8,7 +8,7 @@ def square_numbers(x):
 print(square_numbers([1, 2, 3]))
 
 x = [1, 2, 3]
-square_numbers_lambda = map(lambda i: i * i, x)
+print(list(map(lambda i: i * i, x)))
 
 squares = []
 for i in range(1, 11):

@@ -41,7 +41,7 @@ z.start()
 
 # thread synchronization - main thread will wait for the following threads to synchronize and join
 x.join()
-y.join()
+y.join() 
 z.join()
 
 print(threading.active_count())

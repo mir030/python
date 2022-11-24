@@ -31,6 +31,7 @@ print(list(zip(my_list, your_list)))
 print(my_list)
 print(your_list)
 
+
 # Reduce
 def accumulator(acc, item):
     print(acc, item)
@@ -43,6 +44,7 @@ print(reduce(accumulator, my_list, 0))
 my_list = [1, 2, 3]
 print(list(map(lambda i: i * 2, my_list)))
 
+# filter elements similar to if condition
 print(list(filter(lambda item: item % 2 != 0, my_list)))
 
 # square with lambda
@@ -50,7 +52,7 @@ print(list(map(lambda x: x * x, my_list)))
 
 # List sorting based on second element of tuples
 a = [(0, 2), (4, 3), (9, 9), (10, -1)]
-a.sort(key=lambda x: x[1])
+a.sort(key=lambda x: x[1], reverse=True)
 print(a)
 
 # List comprehensions
