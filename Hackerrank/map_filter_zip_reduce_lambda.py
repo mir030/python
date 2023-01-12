@@ -1,5 +1,6 @@
 from functools import reduce
-# map
+
+"""MAP"""
 my_list = [1, 2, 3]
 
 
@@ -7,13 +8,17 @@ def multiply_by2(item):
     return item * 2
 
 
+func = lambda x: x * 2
+
+
 """map doesn't change the initial list. 
 So it doesn't affect the outside world"""
-print(list(map(multiply_by2, my_list)))
+print(list(map(func, my_list)))
 print(my_list)
 
+##############################################################################################
 
-# Filter
+"""FILTER"""
 
 
 def only_odd(item):
@@ -21,9 +26,12 @@ def only_odd(item):
 
 
 print(list(filter(only_odd, my_list)))
+print(list(filter(lambda x: x % 2 != 0, my_list)))
 print(my_list)
 
-# Zip
+################################################################################################
+"""Zip"""
+
 # it can be used on iterable like tuples, etc
 your_list = [10, 20, 30]
 
@@ -40,7 +48,9 @@ def accumulator(acc, item):
 
 print(reduce(accumulator, my_list, 0))
 
-# lambda expressions
+########################################################################################
+
+"""lambda expressions"""
 my_list = [1, 2, 3]
 print(list(map(lambda i: i * 2, my_list)))
 
@@ -56,5 +66,3 @@ a.sort(key=lambda x: x[1], reverse=True)
 print(a)
 
 # List comprehensions
-
-

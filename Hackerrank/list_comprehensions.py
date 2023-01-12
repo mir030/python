@@ -32,7 +32,9 @@ print(my_list)
 
 names = ["Bruce", "Clark", "Peter"]
 heroes = ["Batman", "Superman", "Spiderman"]
-
+name_sup_list = [(x, y) for x in names for y in heroes]
+print(name_sup_list)
+zip_obj = zip(names, heroes)
 my_dict = {x: y for x, y in zip(names, heroes) if x != "Peter"}
 print(my_dict)
 

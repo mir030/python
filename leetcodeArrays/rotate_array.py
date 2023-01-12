@@ -22,8 +22,8 @@ def rotate(array, no_of_rotation):
         array[i] = rotated_array[i]
 
 
-nums = [1, 1, 1, 1, 1, 1, 2]
-k = 1
+nums = [1, 2, 3]
+k = 2
 rotate(nums, k)
 print(nums)
 

@@ -6,7 +6,7 @@ class Solution(object):
         return "false"
 
 
-arr = [3, 1, 7, 11]
+arr = [3, 1, 6, 11]
 
 solution = Solution()
 print(solution.checkIfExist(arr))
