@@ -5,14 +5,10 @@ class LinkedlistNode:
 
 
 def to_linked_list(iterable):
-    head = None
+    next = None
     for val in reversed(iterable):
-        head = LinkedlistNode(val, head)
-    return head
-
-
-l1 = to_linked_list([1, 2, 4])
-
+        next = LinkedlistNode(val, next)
+    return next
 
 
 def to_native_list(head):
@@ -22,5 +18,3 @@ def to_native_list(head):
         head = head.next
     return lst
 
-
-l2 = to_native_list(l1)

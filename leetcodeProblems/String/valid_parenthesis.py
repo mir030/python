@@ -12,4 +12,4 @@ def isValid(s):
     return stack == [0]
 
 
-print(isValid("([{}])"))
+print(isValid("()"))
